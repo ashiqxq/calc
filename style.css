@@ -1,0 +1,147 @@
+* {
+    font-family: Helvetica,helvetica,arial,sans-serif;
+}
+body{
+    color: white;
+}
+.root-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color:white;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-root-container{
+    border: 5px solid black;
+    border-radius: 10px 10px 10px 10px;
+    height: 430px;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    background: black;
+    align-items: center;
+    z-index: 100;
+}
+
+.display-screen{
+    height: 30%;
+    width: 100%;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.buttons-container{
+    display: flex;
+    /* border: 2px solid #282828; */
+    flex-direction: row;
+    height: 68%;
+    width:98%;
+}
+.right-btn-group{
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+    align-items: flex-start;
+    padding-top: 3px;
+}
+
+.right-btn-group > .btn{
+    margin: 7px;
+}
+
+.left-btn-group{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 78%;
+}
+
+#division-div{
+    flex-grow: 0;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+#multiply-div{
+    flex-grow: 0;
+    margin-bottom: 8px !important;
+}
+#add-div{
+    margin-top: 12px;
+    height: 98px !important;
+}
+#subtract-div{
+    margin-top: 11px;
+    flex-grow: 0;
+} 
+
+.right-btn-group > div{
+    height: 50px;
+    margin-bottom: 17px;
+}
+
+.left-btn-group > .btn{
+    margin-bottom: 10px;
+    margin: 7px;
+}
+
+
+
+.blue-btn{
+    background: cyan;
+}
+
+.num-btn, .dec-btn{
+    background: #181818 !important;
+    color: white;
+}
+
+.btn{
+    font-size: 23px;
+    background: #33FFCC;
+    width: 40px !important;
+    height: 40px !important;
+    margin: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 750;
+}
+
+#clear-btn, #percentage-btn{
+    font-size: 20px;
+}
+
+.btn:hover{
+    background: #3399FF !important;
+}
+
+.display-screen .input-area{
+    height: 40px;
+    width: 92%;
+    font-weight: 550;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 15px;
+    overflow: hidden;
+}
+.display-screen .output-area{
+    height: 40px;
+    width: 68%;
+    font-weight: 550;
+    color: 	#707070;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 15px;
+    overflow: hidden;
+}
+
+
+
