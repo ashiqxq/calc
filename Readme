@@ -1,0 +1,2 @@
+script.js uses first come first compute logic (doesn't follow bodmas rule)
+bscript.js uses bodmas principle to compute.
