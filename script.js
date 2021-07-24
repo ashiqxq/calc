@@ -22,6 +22,8 @@ class Calculator{
         this.previouschar = null;
         this.inputscreenexpression = "";
         this.outputscreenexpression = "";
+        this.prevcomputed_value = 0;
+        this.prevtempvalstr = "";
         this.update_display();
     }
 
@@ -57,7 +59,7 @@ allowed_char = {"0": 1, "1": 1, "2": 1, "3": 1, "4": 1, "5": 1, "6": 1, "7": 1, 
 allowed_operator = {"+": 1, "-":1, "*": 1, "/": 1};
 
 computer = {
-    '+': (x, y) =>{
+    '+': (x, y, z) =>{
         if (x=="") {x="0"}
         if (y=="") {y="0"}
         return parseFloat(x)+parseFloat(y);
